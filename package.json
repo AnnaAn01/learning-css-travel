@@ -1,0 +1,22 @@
+{
+  "name": "css-travel-v1",
+  "version": "1.0.0",
+  "description": "Landing page for travel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaAn01/learning-css-travel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaAn01/learning-css-travel/issues"
+  },
+  "homepage": "https://github.com/AnnaAn01/learning-css-travel#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
