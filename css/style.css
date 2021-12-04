@@ -47,7 +47,7 @@ body {
   padding: 3rem; }
 
 .heading-primary {
-  color: #fff;
+  color: #f3f0f0;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 60px; }
@@ -87,13 +87,13 @@ body {
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(26, 24, 24, 0.2); }
 
 .btn--white {
-  background-color: #fff;
+  background-color: #f3f0f0;
   color: #777; }
   .btn--white::after {
-    background-color: #fff; }
+    background-color: #f3f0f0; }
 
 .btn::after {
   content: "";
