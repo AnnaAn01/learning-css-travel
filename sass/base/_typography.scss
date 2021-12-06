@@ -34,3 +34,30 @@ body {
     animation-timing-function: ease-out;
   }
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  // inline-block will allow us the only set the color to only
+  // the area that has text, not all the way to the end of the line
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  // making the gradient happen behind the text
+  // we also need to set the background-clip for responsive reasons
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    //x direction 5rem, y direction 1rem, blur 2rem, color with 0.2 opacity
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
