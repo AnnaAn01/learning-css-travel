@@ -47,7 +47,7 @@ body {
   padding: 3rem; }
 
 .heading-primary {
-  color: #f3f0f0;
+  color: white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 60px; }
@@ -127,10 +127,10 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(26, 24, 24, 0.2); }
 
 .btn--white {
-  background-color: #f3f0f0;
+  background-color: white;
   color: #777; }
   .btn--white::after {
-    background-color: #f3f0f0; }
+    background-color: white; }
 
 .btn::after {
   content: "";
@@ -194,7 +194,7 @@ body {
     transform: scale(0.95); }
 
 .feature-box {
-  background-color: rgba(243, 240, 240, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
@@ -213,11 +213,31 @@ body {
     transform: translateY(-1.5rem) scale(1.03); }
 
 .card {
-  background-color: orangered;
-  height: 50rem;
-  transition: all 0.8s; }
-  .card:hover {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    color: #fff;
+    height: 50rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(26, 24, 24, 0.15); }
+    .card__side--front {
+      background-color: white; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+  .card:hover .card__side--front {
     transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
 
 .header {
   height: 95vh;
