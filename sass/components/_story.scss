@@ -3,7 +3,7 @@
   //this is a block element inside a block element, so we can use the below
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
-  background-color: $color-white;
+  background-color: rgba($color-white, 0.6);
   border-radius: 3px;
   padding: 6rem;
   //6 + 3 = 9rem, the below will override the left padding we set for all of the sides
