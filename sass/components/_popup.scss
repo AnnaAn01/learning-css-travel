@@ -6,6 +6,16 @@
   left: 0;
   background-color: rgba($color-black, 0.8);
   z-index: 9999;
+  // to hide the popup
+  // opacity will make it invisible, but elements will still be there, but visibility solve that
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  //  to make the popup appear
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
 
   &__content {
     //   absCenter is for positioning the item in the center, look in the mixins
@@ -40,9 +50,19 @@
     font-size: 1.4rem;
     margin-bottom: 4rem;
 
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    // this is like the border
+    -moz-column-rule: 1px solid $color-grey-light-2;
+
     column-count: 2;
     column-gap: 4rem;
     // this is like the border
     column-rule: 1px solid $color-grey-light-2;
+
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 }
