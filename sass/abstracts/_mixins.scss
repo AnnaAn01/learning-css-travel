@@ -42,4 +42,22 @@ $breakpoint argument choices:
       @content;
     }
   }
+
+  @if $breakpoint == tab-port {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tap-land {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
 }
