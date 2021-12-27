@@ -15,11 +15,11 @@ html {
   //   font-size: 50%;
   // }
 
-  // width < 900 ?
+  // width < 1200 ?
   @include respond(tap-land) {
     font-size: 56.25%; // 1rem = 9px, 9/16=56.25%
   }
-  //width < 600 ?
+  //width < 900 ?
   @include respond(tab-port) {
     font-size: 50%; // if we want 1rem to be = to 8px, 8/16=50% (the default we set to 60%)
   }
@@ -31,4 +31,9 @@ html {
 
 .body {
   box-sizing: border-box;
+  // padding: 3rem;
+
+  // @include respond(tab-port) {
+  //   padding: 0;
+  // }
 }
